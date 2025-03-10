@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullying Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bullying Awareness</h1>
+        <p>
+            Bullying is a serious issue that affects individuals, especially students, in schools worldwide. 
+            It can take various forms, including physical, verbal, and cyberbullying. Victims often suffer 
+            emotional and psychological distress, impacting their confidence and well-being.
+        </p>
+
+        <h2>Tell Us Your Experience</h2>
+        <form id="bullyingForm">
+            <label>Have you ever been bullied?</label><br>
+            <input type="radio" name="bullied" value="Yes"> Yes
+            <input type="radio" name="bullied" value="No"> No
+            <br><br>
+
+            <label>If yes, where did it happen?</label><br>
+            <input type="text" id="where" placeholder="e.g., School, Online">
+            <br><br>
+
+            <label>How did the bullying occur?</label><br>
+            <textarea id="how" placeholder="Describe the situation"></textarea>
+            <br><br>
+
+            <label>How did you react?</label><br>
+            <textarea id="reaction" placeholder="Describe your reaction"></textarea>
+            <br><br>
+
+            <label>Did you seek help?</label><br>
+            <select id="help">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Didn't know where to go">Didn't know where to go</option>
+            </select>
+            <br><br>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <div id="responseMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
